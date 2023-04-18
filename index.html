@@ -5,42 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator App</title>
-    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header></header>
     <main>
-      <section class="container">
+      <section class="container-main">
         <div class="input-form">
-          <div class="day-container">
+          <div class="container container-day">
             <p class="input-label">DAY</p>
-            <input type="text" class="input input-day">
-            <p class="error error-day inv">Must be a valid day</p>
-            <p class="error error-form inv">Must be a valid date</p>
+            <input type="text" class="input input-day" placeholder="DD" />
+            <p class="error error-text error-day inv">Must be a valid day</p>
+            <p class="error error-text error-form inv">Must be a valid date</p>
+            <p class="error error-text error-required inv">This field is required</p>
           </div>
-          <div class="month-container">
+          <div class="container container-month">
             <p class="input-label">MONTH</p>
-            <input type="text" class="input input-month">
-            <p class="error error-month inv">Must be a valid month</p>
+            <input type="text" class="input input-month" placeholder="MM" />
+            <p class="error error-text error-month inv">Must be a valid month</p>
+            <p class="error error-text error-required inv">This field is required</p>
           </div>
-          <div class="year-container">
+          <div class="container container-year">
             <p class="input-label">YEAR</p>
-            <p class="error error-year inv">Must be in the past</p>
-            <input type="text" class="input-year">
+            <input type="text" class="input input-year" placeholder="YYYY" />
+            <p class="error error-text error-year inv">Must be in the past</p>
+            <p class="error error-text error-required inv">This field is required</p>
           </div>
         </div>
-        <div class="submit-contianer">
+        <div class="container container-submit">
           <hr />
-          <button class="btn"><img src="assets/images/icon-arrow.svg" alt=""></button>
+          <button class="btn">
+            <img src="assets/images/icon-arrow.svg" alt="" />
+          </button>
         </div>
         <div class="output">
-          <p class="output-years">--</p>
-          <p class="output-label"> years</p>
-          <p class="output-months">--</p>
-          <p class="output-label"> months</p>
-          <p class="output-days">--</p>
-          <p class="output-label"> days</p>
+          <div class="output-years">
+            <p class="output-years-text">- -</p>
+            <p>years</p>
+          </div>
+          <div class="output-months">
+            <p class="output-months-text">- -</p>
+            <p>months</p>
+          </div>
+          <div class="output-days">
+            <p class="output-days-text">- -</p>
+            <p>days</p>
+          </div>
         </div>
       </section>
     </main>
