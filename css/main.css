@@ -191,7 +191,101 @@ td, th {
 }
 
 body {
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  place-items: center;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background: hsl(0, 0%, 94%);
+}
+
+hr {
+  color: hsl(0, 0%, 94%);
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 825px;
+  min-width: 300px;
+  background: hsl(0, 0%, 100%);
+  padding: 3.5em;
+  border-radius: 30px 30px 200px 30px;
+}
+
+.input-form {
+  display: flex;
+  gap: 2rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container-submit {
+  position: relative;
+  place-content: center;
+  height: 50px;
+}
+
+.input {
+  font-size: 32px;
+  max-width: 170px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 94%);
+  padding: 0.6rem 1.5rem;
+}
+.input:focus-within {
+  outline: none;
+}
+.input-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 3px;
+  padding-bottom: 0.7em;
+}
+
+.error {
+  color: hsl(0, 100%, 67%);
+}
+.error-text {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  bottom: 0;
+}
+
+.inv {
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  aspect-ratio: 1;
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  padding: 1.2rem 1.3rem;
+}
+
+.output {
+  line-height: 1.1em;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 100px;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.output-years, .output-months, .output-days {
+  display: flex;
+}
+
+.output-years-text, .output-months-text, .output-days-text {
+  color: hsl(259, 100%, 65%);
 }/*# sourceMappingURL=main.css.map */
