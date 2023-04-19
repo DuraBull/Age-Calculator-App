@@ -132,12 +132,12 @@ function validateInput() {
             errorMsg(i);
             showError(i);
         }
-        else if (inputs[i].label.innerHTML == "MONTH" && inputs[i].value > date.getMonth() + 1 && inputYear.value == date.getFullYear()) {
+        else if (inputs[i].label.innerHTML == "MONTH" && inputs[i].value > date.getMonth() + 1) {
             inputs[i].errorMsg = "Must be in the past";
             errorMsg(i);
             showError(i);
         }
-        else if (inputs[i].label.innerHTML == "DAY" && input[i].value > date.getDate() && inputMonth.value == date.getMonth + 1) {
+        else if (inputs[i].label.innerHTML == "DAY" && parseInt(inputs[i].value) > date.getDate()) {
             inputs[i].errorMsg = "Must be in the past";
             errorMsg(i);
             showError(i);
