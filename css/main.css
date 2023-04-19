@@ -201,6 +201,13 @@ body {
   background: hsl(0, 0%, 94%);
 }
 
+main {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  max-width: 825px;
+}
+
 hr {
   color: hsl(0, 0%, 94%);
 }
@@ -209,7 +216,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 825px;
+  flex-shrink: 0;
   min-width: 300px;
   background: hsl(0, 0%, 100%);
   padding: 3.5em;
@@ -286,6 +293,6 @@ hr {
   display: flex;
 }
 
-.output-years-text, .output-months-text, .output-days-text {
+.output-text {
   color: hsl(259, 100%, 65%);
 }/*# sourceMappingURL=main.css.map */
