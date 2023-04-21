@@ -291,6 +291,7 @@ hr {
 }
 .output-years, .output-months, .output-days {
   display: flex;
+  gap: 1rem;
 }
 
 .output-text {
