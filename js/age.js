@@ -282,6 +282,9 @@ function showError() {
             inputs[i].error.classList.remove("inv");
             inputs[i].label.classList.add("error");
             inputs[i].input.classList.add("error-label")
+            years.innerHTML = "- -";
+            months.innerHTML = "- -";
+            days.innerHTML = "- -";
         }
         else {
             removeError(i);

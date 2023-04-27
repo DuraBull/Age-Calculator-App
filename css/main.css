@@ -197,6 +197,7 @@ body {
   place-items: center;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  padding: 5em 1em;
   font-weight: 400;
   background: hsl(0, 0%, 94%);
 }
@@ -206,10 +207,11 @@ main {
   flex-flow: column;
   flex-grow: 1;
   max-width: 825px;
+  min-width: 300px;
 }
 
 hr {
-  color: hsl(0, 0%, 94%);
+  border: 1px solid hsl(0, 0%, 94%);
 }
 
 .container-main {
@@ -217,10 +219,12 @@ hr {
   flex-direction: column;
   gap: 1.5rem;
   flex-shrink: 0;
+  flex-grow: 1;
   min-width: 300px;
+  width: 100%;
   background: hsl(0, 0%, 100%);
   padding: 3.5em;
-  border-radius: 30px 30px 200px 30px;
+  border-radius: 20px 20px 200px 20px;
 }
 
 .input-form {
@@ -242,14 +246,18 @@ hr {
 .input {
   font-size: 32px;
   max-width: 170px;
-  min-width: 100px;
+  min-width: 80px;
   width: 100%;
   border-radius: 10px;
   border: 1px solid hsl(0, 0%, 94%);
   padding: 0.6rem 1.5rem;
 }
+.input:hover {
+  cursor: pointer;
+}
 .input:focus-within {
-  outline: none;
+  outline: hsl(259, 100%, 65%);
+  border: 1px solid hsl(259, 100%, 65%);
 }
 .input-label {
   font-size: 14px;
@@ -272,6 +280,10 @@ hr {
   border: 1px solid hsl(0, 100%, 67%);
   outline: hsl(0, 100%, 67%);
 }
+.error-label:focus-within {
+  border: 1px solid hsl(0, 100%, 67%);
+  outline: hsl(0, 100%, 67%);
+}
 
 .inv {
   display: none;
@@ -280,15 +292,17 @@ hr {
 .btn {
   position: absolute;
   right: 0;
-  aspect-ratio: 1;
   background: hsl(259, 100%, 65%);
   border-radius: 50%;
   border: none;
   padding: 1.2rem 1.3rem;
 }
+.btn:hover {
+  background: black;
+}
 
 .output {
-  line-height: 1.1em;
+  line-height: 1.14em;
   font-style: italic;
   font-weight: 700;
   font-size: 100px;
@@ -302,4 +316,43 @@ hr {
 
 .output-text {
   color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 50em) {
+  body {
+    height: 100%;
+  }
+  .container-main {
+    padding: 3em 1em;
+    border-bottom-right-radius: 100px;
+  }
+  .input-form {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .input {
+    font-size: 1.1em;
+    padding: 0.8rem 1rem;
+  }
+  .input-label {
+    font-size: 12px;
+  }
+  .btn {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    padding: 0.8rem;
+  }
+  .btn img {
+    width: 25px;
+    height: 25px;
+  }
+  .output {
+    font-size: 2.8em;
+  }
+  .error-text {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
