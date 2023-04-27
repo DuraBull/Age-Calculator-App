@@ -3,11 +3,12 @@
     flex-direction: column
     gap: 1.5rem
     flex-shrink: 0
-    // max-width: 825px
+    flex-grow: 1
     min-width: 300px
+    width: 100%
     background: $white
     padding: 3.5em
-    border-radius: 30px 30px 200px 30px
+    border-radius: 20px 20px 200px 20px
 
 .input-form
     display: flex
@@ -16,6 +17,7 @@
 .container
     position: relative
     display: flex
+    // min-width: 300px
     flex-direction: column
     &-submit
         position: relative
@@ -24,13 +26,16 @@
 .input
     font-size: 32px
     max-width: 170px
-    min-width: 100px
+    min-width: 80px
     width: 100%
     border-radius: 10px
     border: 1px solid $off-white
     padding: .6rem 1.5rem
+    &:hover
+        cursor: pointer
     &:focus-within
-        outline: none
+        outline: $purple
+        border: 1px solid $purple
     &-label
         font-size: 14px
         font-weight: $font-regular
@@ -48,6 +53,9 @@
     &-label
         border: 1px solid $light-red
         outline: $light-red
+        &:focus-within
+            border: 1px solid $light-red
+            outline: $light-red
 
 .inv
     display: none
@@ -55,14 +63,16 @@
 .btn
     position: absolute
     right: 0
-    aspect-ratio: 1
+    // aspect-ratio: 1
     background: $purple
     border-radius: 50%
     border: none
     padding: 1.2rem 1.3rem
+    &:hover
+        background: black
 
 .output
-    line-height: 1.1em
+    line-height: 1.14em
     font-style: italic
     font-weight: $font-bold
     // display: flex
