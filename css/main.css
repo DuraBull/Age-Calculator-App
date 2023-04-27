@@ -242,6 +242,8 @@ hr {
 .input {
   font-size: 32px;
   max-width: 170px;
+  min-width: 100px;
+  width: 100%;
   border-radius: 10px;
   border: 1px solid hsl(0, 0%, 94%);
   padding: 0.6rem 1.5rem;
@@ -265,6 +267,10 @@ hr {
   font-weight: 400;
   font-style: italic;
   bottom: 0;
+}
+.error-label {
+  border: 1px solid hsl(0, 100%, 67%);
+  outline: hsl(0, 100%, 67%);
 }
 
 .inv {
